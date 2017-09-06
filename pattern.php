@@ -1,8 +1,22 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/*
+  Script to construct the following pattern.
+ *
+ * *
+ * * *
+ * * * *
+ * * * * *
+ * * * * *
+ * * * *
+ * * *
+ * *
+ *
  */
 
+for ($row = 1; $row < 10; $row++) {
+    for ($col = 1; $col <= ($row <= 5 ? $row : 10 - $row); $col++) {
+        echo "* ";        
+    }
+    echo PHP_EOL;
+}
