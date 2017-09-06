@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Sort array using bubble sort.
+ * Sort array using Selection sort.
  */
 
 function selectionsort($arr) {
@@ -9,7 +9,8 @@ function selectionsort($arr) {
     
     for($i =0; $i < $size; $i++){
         
-        for($j= $i +1; $j < $size; $j++) {
+        for($j= $i + 1; $j < $size; $j++) {
+            // if value at j < value at i, swap values.
             if($arr[$j] < $arr[$i]) {                
                 swap_values($arr,$i, $j );
             }
